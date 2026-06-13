@@ -1,0 +1,54 @@
+          <!-- DOM Manupulation -->
+           
+<h1 id = "one">
+    Hello World
+</h1>
+<button onclick="change()">Change</button>
+
+<script>
+    var head = document. getElementById("one");
+    console.log(head.textContent);
+// Event handlers
+function change (){
+    head. textContent = "Bye World"
+}
+</script>
+
+  <!-- EXERCISE : -->
+<input id ="one">
+<input id ="two">
+<button onclick = "add()">Add</button>
+<p id="result">Result</p>
+
+<script>
+    let one = document. getElementById("one");
+    let two = document. getElementById("two");
+    let result = document. getElementById("result");
+function add(){
+      let total = (Number(one.value)+ Number(two.value));
+      result.textContent = total;
+}
+</script>
+
+    <!-- EXERCISE : Change the color of the box when the button is clicked. -->    
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        transition: 2s;
+    }
+    .width{
+        width:900px;
+    }
+</style>
+<div id="box"></div>
+<button onclick = "change()">change color</button>
+
+<script>
+    let box = document.getElementById("box");
+function change(){
+    box.setAttribute("class","width");
+    box.style.backgroundColor = "yellow";
+}
+</script>
