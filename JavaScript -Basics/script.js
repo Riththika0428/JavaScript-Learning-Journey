@@ -39,7 +39,7 @@ let num = 7>6;
 console.log(num); //true
 
 let num1 = 6<=6;
-console.log(num1); //true
+console.log(num1); //true 
 
 let value1 = "3";
 let value2 = 3;
@@ -63,8 +63,42 @@ console.log(a>c || b<c); //true
 console.log(!(a>c));       //true
 
 
+//Conditional Statements
+//if Statement -> use if to specify a block of code to be executed, if a specified condition is true.
+//Use else to specift a block of code to be executed, if the same condition is false.
+//else if statement -> Use else if to specify a new condition to test, if the first condititon is false.
 
+let marks = 80;
 
+if(marks >= 75){
+ console.log("A");
+}
+else if(marks >= 65){
+ console.log("B");
+}
+else if(marks >= 50){
+ console.log("C");
+}
+else{
+ console.log("Fail");
+}
+
+//Ternary operator (? and :)
+let val = 7;
+let result ;
+
+/* if (val%2===0) {
+     result = "Even";
+ }
+ else {
+    result = "Odd";
+ }
+ console.log(result); */
+
+ result = val%2===0 ? "Evene" : "Odd";
+ console.log(result);
+
+ 
 
 
 
