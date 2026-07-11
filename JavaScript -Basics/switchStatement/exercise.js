@@ -89,28 +89,51 @@ switch(color){
 }
 
 //Build a simple calculator (+, -, *, /)
-let num1 = 20;
-let num2 = 5;
-let operator = "+";
+// let num1 = 20;
+// let num2 = 5;
+// let operator = "+";
 
-switch(operator){
-    case "+":
-        console.log(num1 + num2);
+// switch(operator){
+//     case "+":
+//         console.log(num1 + num2);
+//         break;
+//     case "-":
+//         console.log(num1 - num2);
+//         break;
+//     case "*":
+//         console.log(num1 * num2);
+//         break;
+//     case "/":
+//         if(num2!==0){
+//             console.log(num1/num2);
+//         }
+//         else{
+//             console.log("Error:can not divide by zero");
+//         }
+//         break;
+//     default:
+//         console.log("Invalid Operator!");
+// }
+
+//Convert grades (A, B, C, D, F)into messages
+let garde = "A";
+
+switch(garde){
+    case "A":
+       console.log("Pass with 'A' garde");
+       break;
+    case "B":
+       console.log("Pass with 'B' garde");
+       break;
+    case "C":
+        console.log("Pass with 'C' grade");
         break;
-    case "-":
-        console.log(num1 - num2);
+    case "D":
+        console.log("Pass with 'D' grade");
         break;
-    case "*":
-        console.log(num1 * num2);
-        break;
-    case "/":
-        if(num2!==0){
-            console.log(num1/num2);
-        }
-        else{
-            console.log("Error:can not divide by zero");
-        }
+    case "F":
+        console.log("Fail");
         break;
     default:
-        console.log("Invalid Operator!");
+        console.log("Invalid grade");
 }
