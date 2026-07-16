@@ -24,3 +24,32 @@ while (i <= 5) {
     i++;
 }            //Output : 1 2 3 4 5
 
+
+//do..while loop
+let a = 1;
+
+do{
+    console.log(a);
+    i++;
+} while(a<=5);
+
+
+//Break statement
+for(let x =1; x<=10; x++){
+    if(x === 6){
+        break;
+    }
+console.log(x);
+}                      //output : 1 2 3 4 5
+
+
+//continue statement
+for(let y =1; y<=5; y++){
+    if(y===3){
+        continue;
+    }
+console.log(y);
+}                    //output : 1 2 4 5
+
+
+

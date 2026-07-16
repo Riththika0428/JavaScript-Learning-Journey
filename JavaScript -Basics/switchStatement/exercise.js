@@ -89,31 +89,31 @@ switch(color){
 }
 
 //Build a simple calculator (+, -, *, /)
-// let num1 = 20;
-// let num2 = 5;
-// let operator = "+";
+let num1 = 20;
+let num2 = 5;
+let operator = "+";
 
-// switch(operator){
-//     case "+":
-//         console.log(num1 + num2);
-//         break;
-//     case "-":
-//         console.log(num1 - num2);
-//         break;
-//     case "*":
-//         console.log(num1 * num2);
-//         break;
-//     case "/":
-//         if(num2!==0){
-//             console.log(num1/num2);
-//         }
-//         else{
-//             console.log("Error:can not divide by zero");
-//         }
-//         break;
-//     default:
-//         console.log("Invalid Operator!");
-// }
+switch(operator){
+    case "+":
+        console.log(num1 + num2);
+        break;
+    case "-":
+        console.log(num1 - num2);
+        break;
+    case "*":
+        console.log(num1 * num2);
+        break;
+    case "/":
+        if(num2!==0){
+            console.log(num1/num2);
+        }
+        else{
+            console.log("Error:can not divide by zero");
+        }
+        break;
+    default:
+        console.log("Invalid Operator!");
+}
 
 //Convert grades (A, B, C, D, F)into messages
 let garde = "A";
@@ -136,4 +136,21 @@ switch(garde){
         break;
     default:
         console.log("Invalid grade");
+}
+
+
+let age = 20;
+
+switch(true){
+    case age <= 12:
+        console.log("Child");
+        break;
+    case age >= 13 && age < 20:
+        console.log("Teenager");
+        break;
+    case age >= 20 && age <= 59:
+        console.log("Adult");
+        break;
+    case age >= 60:
+        console.log("Senior citizen");
 }
