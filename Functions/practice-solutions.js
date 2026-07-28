@@ -46,5 +46,4 @@ function calculateArea(length,width){
 calculateArea(45,20);
 calculateArea(6,2);
 
-
-//Create 
+ 
