@@ -102,3 +102,25 @@ console.log(students[1].age);    //22
 const Fruits = ["Apple", "Orange"];
 Fruits.push("Banana"); // Allowed
 // Fruits = ["Mango"]; // Error: Cannot reassign a const variable
+
+
+//Common Array Methods
+let fruitss = ["Apple", "Orange", "Banana"];
+console.log(fruitss.includes("Orange"));   //true
+console.log(fruitss.includes("Mango"));    //false
+
+console.log(fruitss.indexOf("Orange"));    //1
+
+console.log(fruitss.join(", "));           //Apple, Orange, Banana
+
+fruitss.forEach(function(fruit) {
+    console.log(fruit);
+});
+
+fruitss.forEach((fruit, index) => {
+    console.log(index, fruit);
+});                                  //0 Apple  1 Orange  2 Banana
+
+fruitss.forEach((fruit, index, array) => {
+    console.log(array);
+});
