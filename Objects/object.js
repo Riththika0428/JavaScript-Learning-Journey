@@ -39,3 +39,4 @@ let car = {
 };
 console.log(car.brand);
 console.log(car.price);
+
